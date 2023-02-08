@@ -1,0 +1,41 @@
+.navbar{
+    background-color: transparent;
+    font-family: Montserrat-Extralight !important;
+    font-size: 1em;
+    color: #FFCF53!important;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    padding-left: 6%;
+    padding-right: 50px;
+    width: 100%;
+    position:fixed;
+}
+
+.navHeader{
+    font-size: 1em;
+    color: #FFCF53;
+}
+
+.navLinks{
+    margin-left: 40px;
+    color: #FFCF53;
+}
+
+@font-face {
+    font-family: Montserrat-Extralight;
+    src: url(../fonts/Montserrat/MontserratAlternates-ExtraLight.ttf)
+}
+
+@media screen and (min-width: 0px) and (max-width: 992px) {
+    .navbar{           
+        /* background: rgb(14, 18, 26); */
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 0px;
+        padding-right: 15px;
+    }
+    .navHeader{
+        visibility:hidden;
+    }
+}
+
