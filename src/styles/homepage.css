@@ -4,7 +4,7 @@
     color:white;
     width:100vw;
     height: 100vh;
-    padding-top: 20vh;        
+    padding-top: 18vh;        
     padding-left: 6%;
     padding-right: 6%;
     max-width: 100%;
@@ -12,7 +12,6 @@
 }
 
 .Intro{
-    padding-top: 2vh;
     padding-bottom: 5vh;
     font-family: Montserrat-Light;
     font-style: normal;
@@ -34,7 +33,7 @@
     font-family: Montserrat-Light;
     font-style: normal;
     font-size:1.52em;
-    width: 50%;    
+    width: 40%;    
     text-align: center;
     line-height: 1.2em;
     color: #F4B945; 
@@ -65,17 +64,19 @@
 
 .ProgressBars{
     margin: 0;
-    align-content: left;
+    display: inline-block;
+    text-align: center;
+    width: 40%;
+    align-items: center;
     margin-top: 5vh;
 }
 
 .ProgressBarText{
     padding: 6px;
-    text-align: left;
+    /* text-align: left; */
     font-family: Montserrat-Regular;
     font-style: normal;
-    font-weight: 400;
-    font-size: 1.2em;
+    font-size: 1.5em;
     padding-bottom: 1vh;
     line-height: 18px;
     color: #FFFFFF;
@@ -98,11 +99,10 @@
     border-radius: 100px;
     align-items: center;
     position: relative;
-    padding: 0 5px;
+    padding: 20 5px;
     display: flex;
     height: 20px;
-    width:40vw;
-    margin-bottom: 2vh;
+    margin-bottom: 2vh; 
   }
 
 /* .progressbar-value {
@@ -124,7 +124,7 @@
 .progressBar-value{
     border-radius: 100px;
     background: #F4B945;
-    height: 15px;
+    height: 18px;
 }
 
 
@@ -186,6 +186,43 @@
 
 
 /*Blog Components*/
+
+.blog-card{
+    height: 20vh;
+    margin: 30px;
+    color: #15191f;
+    text-align: left;
+    margin-bottom: 50px;
+    border-radius: 10px;
+}
+
+.blog-card-image{
+    background-color: aqua;
+}
+
+.blog-card-description{
+    padding: 2vh;
+    background-color: #FFFFFF;
+}
+
+.card-left{
+    border-bottom-left-radius: 10px;    
+    border-top-left-radius: 10px;
+}
+.card-right{
+    border-bottom-right-radius: 10px;    
+    border-top-right-radius: 10px;
+}
+
+.blog-title{
+    margin-top: 1vh;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.blog-content-preview{
+    margin-top: 1vh;
+}
 
 .blogContainer{
     background: #181D23;
