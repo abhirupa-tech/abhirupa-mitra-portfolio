@@ -23,7 +23,7 @@
     font-style: normal;
     line-height: 78px;
     color: #FFFFFF;
-    font-size: 5em;
+    font-size: 4em;
     text-align: center;
 }
 
@@ -32,7 +32,7 @@
     margin-top: 20px;
     font-family: Montserrat-Light;
     font-style: normal;
-    font-size:1.52em;
+    font-size:1.2em;
     width: 40%;    
     text-align: center;
     line-height: 1.2em;
@@ -47,6 +47,11 @@
 .icon{
     padding-right: 40px;   
     cursor: pointer;
+}
+
+.icon > svg {    
+    height: 65px;
+    width: 65px;
 }
 
 .icon svg path{
@@ -76,23 +81,11 @@
     /* text-align: left; */
     font-family: Montserrat-Regular;
     font-style: normal;
-    font-size: 1.5em;
+    font-size: 1.3em;
     padding-bottom: 1vh;
     line-height: 18px;
     color: #FFFFFF;
 }
-/* .pgbar{
-    margin-bottom: 2vh;
-    --bs-progress-bar-bg: #F4B945;
-    --bs-progress-bg: #151F2B;
-}
-
-.pgbar --bs-progress-bar-bg{
-    animation: load 3s normal forwards;
-    border-radius: 100px;
-    background: #fff;
-    width: 0;
-} */
 .progressBar {
     background:#15191f;
     justify-content: flex-start;
@@ -105,11 +98,7 @@
     margin-bottom: 2vh; 
   }
 
-/* .progressbar-value {
-    border-radius: 100px;
-    background: #F4B945;
-    height: 15px;
-} */
+
 
 .progressBarExperience{
     animation: pgExperience 4s normal forwards;
@@ -357,3 +346,95 @@ text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     }
 }
 
+
+/**Tablet Width**/
+@media screen and (max-width: 1250px) {
+    .ProgressBars{
+        width: 60%;
+    }
+    .Intro-SubText{
+        width: 60%;
+    }
+}
+
+/**Wide Screen Phone Width**/
+@media screen and (max-width: 1250px) {
+    .Intro-Header{
+        font-size: 3.5em;
+    }
+    .ProgressBars{
+        width: 80%;
+    }
+    .Intro-SubText{
+        width: 80%;
+    }
+}
+
+/**Narrow Phone Width**/
+@media screen and (max-width: 600px) {
+    .Intro-Header{
+        font-size: 2.8em;
+        line-height: normal;
+    }
+    .Intro-SubText{
+        font-size: 1em;
+        width: 95%;
+    }
+    .icon{
+        padding-right: 25px;   
+        cursor: pointer;
+    }
+    .icon > svg{
+        width: 50px !important;
+        height: 50px;
+    }
+    .ProgressBarText{
+        font-size: 1em;
+    }
+    .ProgressBars{
+        width: 90%;
+    }
+    .progressBar{
+        height: 15px;
+    }
+    .progressBar-value{
+        height: 13px;
+    }
+}
+
+/**Narrow Phone Width**/
+@media screen and (max-width: 600px) {
+    .Intro-Header{
+        font-size: 1.8em;
+        line-height: normal;
+        padding: 0;
+    }
+    .Intro-SubText{
+        font-size: 1em;
+        width: 100%;
+        padding: 0;
+    }
+    .Intro-Icons{
+        margin-top: 50px;
+    }
+    .icon{
+        padding-right: 15px;   
+        cursor: pointer;
+    }
+    .icon > svg{
+        width: 40px !important;
+        height: 40px;
+    }
+    .ProgressBarText{
+        font-size: 1em;
+    }
+    .ProgressBars{
+        width: 98%;
+    }
+    .progressBar{
+        height: 15px;
+    }
+    .progressBar-value{
+        height: 13px;
+    }
+}
