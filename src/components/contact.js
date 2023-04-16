@@ -1,6 +1,6 @@
 import Container from 'react-bootstrap/Container';
 import "../styles/animation.css"
-import "../styles/contact.css"
+import "../styles/introPage.css"
 
 import { useState, useEffect, useRef } from 'react';
 
@@ -21,19 +21,21 @@ function ContactMe({
     };
       
       
+
     return(
         shouldRender && (
-        <Container fluid className="Connect-Parent-Container" id="Connect"
+        <Container fluid className="IntroCaption" id="IntroPage"
         style={{ animation: `${show 
             ? (isScrollDown ? "ComponentAppearFromBottom 2s forwards" : "ComponentAppearFromTop 2s forwards")
-            : (isScrollDown ? "ComponentFadeAwayToTop 0.5s forwards" : "ComponentFadeAwayToBottom 0.5s forwards")} ` }}
+            : (isScrollDown ? "ComponentFadeAwayToTop 1s forwards" : "ComponentFadeAwayToBottom 8s forwards")} ` }}
         onAnimationEnd={onAnimationEnd}>
-            <div className='connect-Header'>
-                <div className='connect-Title'>
-                    Let's not be strangers.
-                    <div className='connect-color'>Connect ?</div>
-                </div>
-                <div className='connect-icons'>
+            <div> 
+                <span className="caption-Header caption-white" color='blue'>Let's not be strangers</span>
+            </div>
+            <div> 
+                <span className="caption-Header caption-color">Connect ?</span>
+            </div>
+            <div className='connect-icons'>
                     <span className='icon icon-Linkedin'>                            
                         <svg viewBox="0 0 37 38" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0_4_57)">
@@ -72,9 +74,9 @@ function ContactMe({
                             </svg>
                         </span>
                 </div>
-            </div>
-        </Container>
-    ))
+        </Container>)
+             
+    )
 }
 
 

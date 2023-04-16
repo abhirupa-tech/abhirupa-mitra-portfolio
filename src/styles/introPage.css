@@ -3,7 +3,7 @@
     height: 100vh;
     width:100vw;
     padding-top:25vh;        
-    padding-left: 13vw;
+    padding-left: 15vw;
     padding-right: 6%;
     max-width: 100%;
     text-align: left;
@@ -12,20 +12,36 @@
 
 .caption-Header {
     /* animation: fadeInTextLeft 1s normal forwards; */
-    font-family: Roboto;
+    font-family: Montserrat-SemiBold;
     font-style: normal;
-    font-weight: 600;
-    line-height: 85px;
+    font-weight: 100;
+    line-height: 9.5vh;
     padding-left: 2vw;
-    font-size: 5em;
+    font-size: 4.2em;
     text-align: left;
 }
 
 .caption-white{
+    padding: 0;
     color: rgb(255, 255, 255);
 }
 
+.connect-icons{
+    margin-top: 20px;
+    margin-left: 2.5vw;
+}
+.icon > svg {
+    height: 50px;
+    width: 50px;
+    margin-right: 2vw;
+}
+
+.icon > svg:hover {
+    cursor: pointer
+}
+
 .caption-color{
+    padding: 0;
     background: linear-gradient(-45deg, #6355a4, #ab6fc4, #e89a3e, #e89a3e);
     background-size: 300%;
     -webkit-background-clip: text;
@@ -49,17 +65,16 @@
 
 
 @font-face {
-    font-family: Cera;
-    src: url(../fonts/Cera-GR-Black.ttf)
-}
-
-@font-face {
     font-family: Roboto;
     src: url(../fonts/Roboto/Roboto-Bold.ttf)
 }
 @font-face {
     font-family: Roboto-Thin;
     src: url(../fonts/Roboto/Roboto-Thin.ttf)
+}
+@font-face {
+    font-family: Montserrat-SemiBold;
+    src: url(../fonts/Montserrat-ExtraBold.ttf)
 }
 
 
@@ -70,5 +85,46 @@
     100% {
         bottom: 0vh;   
     }
+}
+
+
+
+/**Small screen laptops/ Wide tablet devices **/
+@media screen and (max-width: 1300px) {
+    .caption-Header {       
+        line-height: 7vh;
+        font-size: 4em;
+    }
+}
+  
+  /**Small screen laptops/ Wide tablet devices **/
+  @media screen and (max-width: 900px) {
+    .caption-Header {       
+        line-height: 7vh;
+        font-size: 3.8em;
+    }
   }
   
+  /**Small screen laptops/ Wide tablet devices **/
+  @media screen and (max-width: 600px) {
+    .IntroCaption{   
+        padding-top: 20vh;  
+
+    }
+    .caption-Header {  
+        line-height: 50px;
+        font-size: 2.5em;
+    }
+  }
+  
+  /**Small screen laptops/ Wide tablet devices **/
+  @media screen and (max-width: 450px) {
+    .IntroCaption{   
+        padding-top: 20vh;  
+
+    }
+    .caption-Header {  
+        line-height: 35px;
+        font-size: 2em;
+    }
+  }

@@ -1,11 +1,48 @@
-.App {
-     
-    background-image: url(../img/bg.png);
+.App {     
+    /* background-image: url(../img/bg.png); */
     background-repeat:no-repeat;
     background-attachment:fixed;
     background-size: cover;
     background-position: center center;
-  height: 100vh;
-  background-color: #0b0f14;
-  overflow: hidden;
+    height: 100vh;
+    background-color: #020405;
+    overflow: hidden;
+}
+
+.img-end{
+  position: absolute;
+  height: 50vh;
+  right: 10px;
+  bottom: 0;
+}
+
+/**Small screen laptops/ Wide tablet devices **/
+@media screen and (max-width: 1300px) {
+  .App {           
+    /* background-image: url(../img/bg-tablet.png); */
+  }
+}
+
+/**Small screen laptops/ Wide tablet devices **/
+@media screen and (max-width: 900px) {
+  .App {           
+    /* background-image: url(../img/bg-tabletScreen.png); */
+  }
+}
+
+/**Small screen laptops/ Wide tablet devices **/
+@media screen and (max-width: 600px) {
+  .img-end{
+    position: absolute;
+    height: 30vh;
+    right: 10px;
+    bottom: 0;
+  }
+}
+
+/**Small screen laptops/ Wide tablet devices **/
+@media screen and (max-width: 450px) {
+  .App {           
+    /* background-image: url(../img/bg-phone.png); */
+  }
 }

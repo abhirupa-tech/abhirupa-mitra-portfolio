@@ -10,12 +10,12 @@ function NavbarComponent()  {
     return(
         <div className='navbar-parent-container'>
             <Row className="navbar">
-                <Col xxl={3}>@thetravellingprogrammer</Col>
-                <Col xxl={3}></Col>
-                <Col className='nav-link' xxl={3}>
+                <Col sm={3}>@thetravellingprogrammer</Col>
+                <Col sm={3}></Col>
+                <Col className='nav-link' sm={3}>
                     <span className='nav-link-text'>1:1 MENTORING</span>
                 </Col>
-                <Col className='nav-link' xxl={3}>
+                <Col className='nav-link' sm={3}>
                     <span className='nav-link-text'>COLLABORATE</span>
                 </Col>
             </Row>

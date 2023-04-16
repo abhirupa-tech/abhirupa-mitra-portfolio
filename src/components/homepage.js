@@ -28,16 +28,11 @@ function HomePage({
             ? (isScrollDown ? "ComponentAppearFromBottom 2s forwards" : "ComponentAppearFromTop 2s forwards")
             : (isScrollDown ? "ComponentFadeAwayToTop 0.5s forwards" : "ComponentFadeAwayToBottom 0.5s forwards")} ` }}
         onAnimationEnd={onAnimationEnd}>
-            <div> 
-                <span className="caption-Header caption-white" >I am Abhirupa, a Programmer</span>
-            </div>
-            <div> 
-                <span className="caption-Header caption-white">and I</span>
-                <span className="caption-Header caption-color">write code</span>
-            </div>
-            <div> 
-                <span className="caption-Header caption-white">as a full time job</span>
-            </div>            
+                <span className="caption-Header caption-white" >I am Abhirupa, a Programmer</span><br/>
+                <span className="caption-Header caption-white">and I </span>
+                <span className="caption-Header caption-color">write code </span>             
+                <span className="caption-Header caption-white">as a </span>
+                <span className="caption-Header caption-white">full time job</span>      
         </Container>)
              
     )

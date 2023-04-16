@@ -5,6 +5,7 @@ import ContactMe from './components/contact';
 import IntroPage from './components/introPage';
 import { useState, useEffect, useRef } from 'react';
 import './styles/App.css';
+import Saly from "./img/Saly.png"
 import $ from 'jquery';
 
 
@@ -88,6 +89,8 @@ $(window).on('mousewheel', function(event) {
       <IntroPage show = {showPage1} isScrollDown = {isScrollingDown}/>
       <HomePage show = {showPage2} isScrollDown = {isScrollingDown}/>
       <ContactMe show = {showPage3} isScrollDown = {isScrollingDown}/>
+
+      <img src={Saly} className="img-end"/>
     </div>
   );
 }

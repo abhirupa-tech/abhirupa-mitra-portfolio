@@ -27,16 +27,16 @@ function IntroPage({
             ? (isScrollDown ? "ComponentAppearFromBottom 2s forwards" : "ComponentAppearFromTop 2s forwards")
             : (isScrollDown ? "ComponentFadeAwayToTop 1s forwards" : "ComponentFadeAwayToBottom 8s forwards")} ` }}
         onAnimationEnd={onAnimationEnd}>
-            <div> 
-                <span className="caption-Header caption-white" color='blue'>I actualize ideas</span>
-            </div>
-            <div> 
-                <span className="caption-Header caption-white">to create</span>
-                <span className="caption-Header caption-color">digital experiences</span>
-            </div>
-            <div> 
+            {/* <div>  */}
+                <span className="caption-Header caption-white" color='blue'>I actualize ideas </span><br/>
+            {/* </div> */}
+            {/* <div>  */}
+                <span className="caption-Header caption-white">to create </span>
+                <span className="caption-Header caption-color">digital experiences </span><br/>
+            {/* </div> */}
+            {/* <div>  */}
                 <span className="caption-Header caption-underline caption-white">that matter.</span>
-            </div>            
+            {/* </div>             */}
         </Container>)
              
     )
