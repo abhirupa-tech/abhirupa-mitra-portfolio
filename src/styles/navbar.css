@@ -50,3 +50,27 @@
     src: url(../fonts/Roboto/Roboto-Light.ttf)
 }
 
+
+/**Small screen laptops/ Wide tablet devices **/
+@media screen and (max-width: 1300px) {
+    
+}
+  
+  /**Small screen laptops/ Wide tablet devices **/
+  @media screen and (max-width: 900px) {
+    
+  }
+  
+  /**Small screen laptops/ Wide tablet devices **/
+  @media screen and (max-width: 600px) {
+    
+  }
+  
+  /**Small screen laptops/ Wide tablet devices **/
+  @media screen and (max-width: 450px) {
+    .navbar{
+        padding-top: 8vh;
+        font-size: 0.5em;
+    }
+  }
+

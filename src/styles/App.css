@@ -16,6 +16,20 @@
   bottom: 0;
 }
 
+.scroll-down-arrow{
+  align-items: center;
+  align-self: center;
+  position: absolute;
+  height: 50vh;
+  bottom: 30vh;
+  margin: auto;
+  height: fit-content;
+  width: 10vw;
+}
+.scroll-down-arrow > svg {
+  height: 30px;
+}
+
 /**Small screen laptops/ Wide tablet devices **/
 @media screen and (max-width: 1300px) {
   .App {           

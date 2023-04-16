@@ -46,9 +46,9 @@
     background-size: 300%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: animated_text 5s ease-in-out infinite;
-    -moz-animation: animated_text 5s ease-in-out infinite;
-    -webkit-animation: animated_text 5s ease-in-out infinite;
+    animation: animated_text 2s ease-in-out infinite;
+    -moz-animation: animated_text 2s ease-in-out infinite;
+    -webkit-animation: animated_text 2s ease-in-out infinite;
 }
 
 .caption-underline{
