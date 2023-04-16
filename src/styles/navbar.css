@@ -1,19 +1,28 @@
-.navbar{
-    background-color:rgb(26, 30, 36);
-    font-family: Montserrat-Extralight !important;
-    font-size: 1em;
-    color: #FFCF53!important;
-    padding-top: 50px;
-    padding-bottom: 30px;
-    padding-left: 6%;
-    padding-right: 50px;
-    width: 100%;
-    position:fixed;
+.navbar-parent-container{
+    position: top fixed;
+    height: 15vh;
+    z-index: -1;
+    margin: auto;
+    width: 70vw;
+    background-color: none;
+    border-bottom: 1px solid rgb(95, 95, 95);
+    color: rgb(212, 212, 212);
+    font-family: Roboto-Light;
 }
 
-.navHeader{
-    font-size: 1em;
-    color: #FFCF53;
+.navbar{
+    padding-top: 8vh;
+    font-size: 1.1em;
+}
+
+.nav-link{
+    text-align: right;
+    padding-right: 10px;
+    letter-spacing: 2px;
+}
+.nav-link-text:hover{
+    cursor: pointer;
+    color: rgb(233, 194, 127);;
 }
 
 .navLinks{
@@ -21,10 +30,6 @@
     color: #FFCF53;
 }
 
-@font-face {
-    font-family: Montserrat-Extralight;
-    src: url(../fonts/Montserrat/MontserratAlternates-ExtraLight.ttf)
-}
 
 @media screen and (min-width: 0px) and (max-width: 992px) {
     .navbar{           
@@ -37,5 +42,11 @@
     .navHeader{
         visibility:hidden;
     }
+}
+
+
+@font-face {
+    font-family: Roboto-Light;
+    src: url(../fonts/Roboto/Roboto-Light.ttf)
 }
 

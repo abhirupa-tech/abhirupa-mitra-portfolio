@@ -1,0 +1,74 @@
+.IntroCaption{
+    /* background-color: #0b0f14; */
+    height: 100vh;
+    width:100vw;
+    padding-top:25vh;        
+    padding-left: 13vw;
+    padding-right: 6%;
+    max-width: 100%;
+    text-align: left;
+    overflow-x: hidden;
+}
+
+.caption-Header {
+    /* animation: fadeInTextLeft 1s normal forwards; */
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 85px;
+    padding-left: 2vw;
+    font-size: 5em;
+    text-align: left;
+}
+
+.caption-white{
+    color: rgb(255, 255, 255);
+}
+
+.caption-color{
+    background: linear-gradient(-45deg, #6355a4, #ab6fc4, #e89a3e, #e89a3e);
+    background-size: 300%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animated_text 5s ease-in-out infinite;
+    -moz-animation: animated_text 5s ease-in-out infinite;
+    -webkit-animation: animated_text 5s ease-in-out infinite;
+}
+
+.caption-underline{
+    text-decoration-line: underline;    
+    text-decoration-color: #e89a3e;
+    text-underline-offset: 18px;
+}
+    
+@keyframes animated_text {
+    0% { background-position: 0px 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0px 50%; }
+}
+
+
+@font-face {
+    font-family: Cera;
+    src: url(../fonts/Cera-GR-Black.ttf)
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(../fonts/Roboto/Roboto-Bold.ttf)
+}
+@font-face {
+    font-family: Roboto-Thin;
+    src: url(../fonts/Roboto/Roboto-Thin.ttf)
+}
+
+
+@keyframes fadeOut {
+    0% {
+        bottom: 20vh;      
+    }
+    100% {
+        bottom: 0vh;   
+    }
+  }
+  

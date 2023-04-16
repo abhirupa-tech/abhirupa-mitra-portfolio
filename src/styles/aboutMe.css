@@ -1,6 +1,5 @@
-.AboutMe{
-    /* position: relative;     */
-    background: rgb(48, 53, 59);
+.AboutMe{    
+    background: rgb(33, 41, 51);
     color:white;
     height: 100vh;
     width:100vw;
@@ -11,30 +10,20 @@
     overflow-x: hidden;
 }
 
-.Intro{
-    padding-bottom: 5vh;
-    font-family: Montserrat-Light;
-    font-style: normal;
-    text-align: center;
-}
 .about-me-header{
-    animation: fadeInTextLeft 1s normal forwards;
-    font-family: Montserrat-Light;
     font-style: normal;
     line-height: 78px;
     color: #FFFFFF;
     padding-left: 2vw;
     margin-top: 5vh;
-    font-size: 5em;
+    font-size: 4em;
     text-align: left;
 }
 
-.about-me-subtext{    
-    animation: fadeInTextRight 1s normal backwards;
+.about-me-subtext{
     margin-top: 20px;
-    font-family: Montserrat-Light;
     font-style: normal;
-    font-size:1.52em;
+    font-size:1.2em;
     width: 60%;    
     text-align: left;    
     padding-left: 2vw;
@@ -57,76 +46,10 @@
     text-align: left;
     font-style: normal;
     font-weight: 100;
-    font-family:'Montserrat';
-    font-size:1.62em;
-    line-height: 9vh;    
+    font-size:1.52em;
+    line-height: 8.5vh;    
     translate: 5%;
     color: #c7c7c7;
 }
 
-
-.about-me-brief-pos0{
-    animation: about-me-brief-slide-in 1s;
-    animation-delay: 0ms;
-    animation-fill-mode:forwards;
-}
-.about-me-brief-pos1{
-    animation: about-me-brief-slide-in 1s;
-    animation-delay: 200ms;
-    animation-fill-mode:forwards;
-    opacity: 0;
-}
-.about-me-brief-pos2{
-    animation: about-me-brief-slide-in 1s;
-    animation-delay: 400ms;
-    animation-fill-mode:forwards;
-    opacity: 0;
-}
-.about-me-brief-pos3{
-    animation: about-me-brief-slide-in 1s;
-    animation-delay: 600ms;
-    animation-fill-mode:forwards;
-    opacity: 0;
-}
-.about-me-brief-pos4{
-    animation: about-me-brief-slide-in 1s;
-    animation-delay: 700ms;
-    animation-fill-mode:forwards;
-    opacity: 0;
-}
-.about-me-brief-pos5{
-    animation: about-me-brief-slide-in 1s;
-    animation-delay: 800ms;
-    animation-fill-mode:forwards;
-    opacity: 0;
-}
-.about-me-brief-pos6{
-    animation: about-me-brief-slide-in 1s;
-    animation-delay: 900ms;
-    animation-fill-mode:forwards;
-    opacity: 0;
-}
-.about-me-brief-pos7{
-    animation: about-me-brief-slide-in 1s;
-    animation-delay: 1000ms;
-    animation-fill-mode:forwards;
-    opacity: 0;
-}
-
-
-@font-face {
-    font-family: Montserrat;
-    src: url(../fonts/Montserrat/Montserrat-Light.ttf)
-}
-
-@keyframes about-me-brief-slide-in {
-    0%{
-        translate: -8%;
-        opacity: 0;
-    }
-    100%{
-        translate: 0%;
-        opacity: 100;
-    }
-}
 
