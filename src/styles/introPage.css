@@ -56,7 +56,23 @@
     text-decoration-color: #e89a3e;
     text-underline-offset: 18px;
 }
-    
+
+.schedule-mentoring{
+    margin-top: 50px;
+    font-size: 1.2em;
+    color: antiquewhite;
+    font-family: Roboto-Condensed;
+    letter-spacing: 2px;
+}
+
+.schedule-mentoring:hover{
+    color: #fad0a0;
+    cursor: pointer;
+}
+a { color: inherit; text-decoration: none;} 
+a:hover {color: inherit;}   
+
+
 @keyframes animated_text {
     0% { background-position: 0px 50%; }
     50% { background-position: 100% 50%; }
@@ -75,6 +91,10 @@
 @font-face {
     font-family: Montserrat-SemiBold;
     src: url(../fonts/Montserrat-ExtraBold.ttf)
+}
+@font-face {
+    font-family: Roboto-Condensed;
+    src: url(../fonts/Roboto/RobotoCondensed-Light.ttf)
 }
 
 
@@ -120,11 +140,33 @@
   /**Small screen laptops/ Wide tablet devices **/
   @media screen and (max-width: 450px) {
     .IntroCaption{   
-        padding-top: 20vh;  
-
+        padding-top: 25vh;          
+        padding-left: 10vw;
     }
     .caption-Header {  
         line-height: 35px;
-        font-size: 2em;
+        font-size: 2.2em;
+    }
+    .icon > svg{        
+        height: 30px;
+        width: 30px;
+        margin-right: 15px;
+    }
+    .connect-icons{
+        margin-top: 20px;
+        margin-left: 0vw;
+    }
+    .caption-underline{
+        text-decoration: none;
+    }
+    .schedule-mentoring{
+        margin-top: 18px;
+        font-size: 0.8em;
+        color: antiquewhite;
+        font-family: Roboto-Condensed;
+        letter-spacing: 2px;
+    }
+    .nav-link{
+        visibility: hidden;
     }
   }

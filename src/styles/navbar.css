@@ -68,9 +68,22 @@
   
   /**Small screen laptops/ Wide tablet devices **/
   @media screen and (max-width: 450px) {
+
+    .navbar-parent-container{
+        height: 10vh;
+        width: 90vw;
+        font-family: Roboto-Light;
+    }
+
     .navbar{
-        padding-top: 8vh;
+        padding-top: 5vh;
         font-size: 0.5em;
+    }
+
+    .brandName{
+        align-items: center;
+        text-align: center;
+        font-size: 2em;
     }
   }
 

@@ -10,7 +10,7 @@ function NavbarComponent()  {
     return(
         <div className='navbar-parent-container'>
             <Row className="navbar">
-                <Col sm={3}>@thetravellingprogrammer</Col>
+                <Col className='brandName' sm={3} xs={12}>@thetravellingprogrammer</Col>
                 <Col sm={3}></Col>
                 <Col className='nav-link' sm={3}>
                     <span className='nav-link-text'>1:1 MENTORING</span>

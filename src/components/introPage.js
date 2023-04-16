@@ -27,16 +27,14 @@ function IntroPage({
             ? (isScrollDown ? "ComponentAppearFromBottom 2s forwards" : "ComponentAppearFromTop 2s forwards")
             : (isScrollDown ? "ComponentFadeAwayToTop 1s forwards" : "ComponentFadeAwayToBottom 8s forwards")} ` }}
         onAnimationEnd={onAnimationEnd}>
-            {/* <div>  */}
-                <span className="caption-Header caption-white" color='blue'>I actualize ideas </span><br/>
-            {/* </div> */}
-            {/* <div>  */}
+                <span className="caption-Header caption-white" color='blue'>i actualize ideas </span><br/>
                 <span className="caption-Header caption-white">to create </span>
                 <span className="caption-Header caption-color">digital experiences </span><br/>
-            {/* </div> */}
-            {/* <div>  */}
-                <span className="caption-Header caption-underline caption-white">that matter.</span>
-            {/* </div>             */}
+                <span className="caption-Header caption-underline caption-white">that matter</span>
+
+                <div className="schedule-mentoring mobile-only">
+                    <a href="https://calendly.com/abhirupamitra-tech/career-coaching">SCHEDULE A 1:1 MENTORING</a>
+                </div>
         </Container>)
              
     )
