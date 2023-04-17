@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/abhirupa-mitra-portfolio/static/css/main.3225b16c.css",
-    "main.js": "/abhirupa-mitra-portfolio/static/js/main.cc32c896.js",
+    "main.css": "/abhirupa-mitra-portfolio/static/css/main.1ec89f67.css",
+    "main.js": "/abhirupa-mitra-portfolio/static/js/main.4353d7bb.js",
     "static/js/787.9980ff62.chunk.js": "/abhirupa-mitra-portfolio/static/js/787.9980ff62.chunk.js",
     "static/media/Saly.png": "/abhirupa-mitra-portfolio/static/media/Saly.c83aad27a45c46083ded.png",
     "static/media/RobotoCondensed-Light.ttf": "/abhirupa-mitra-portfolio/static/media/RobotoCondensed-Light.315e30bd24f609c6f8d1.ttf",
@@ -10,12 +10,12 @@
     "static/media/Roboto-Light.ttf": "/abhirupa-mitra-portfolio/static/media/Roboto-Light.67102731a93fd827b382.ttf",
     "static/media/Montserrat-ExtraBold.ttf": "/abhirupa-mitra-portfolio/static/media/Montserrat-ExtraBold.fdfc24b8a9e4e17fe907.ttf",
     "index.html": "/abhirupa-mitra-portfolio/index.html",
-    "main.3225b16c.css.map": "/abhirupa-mitra-portfolio/static/css/main.3225b16c.css.map",
-    "main.cc32c896.js.map": "/abhirupa-mitra-portfolio/static/js/main.cc32c896.js.map",
+    "main.1ec89f67.css.map": "/abhirupa-mitra-portfolio/static/css/main.1ec89f67.css.map",
+    "main.4353d7bb.js.map": "/abhirupa-mitra-portfolio/static/js/main.4353d7bb.js.map",
     "787.9980ff62.chunk.js.map": "/abhirupa-mitra-portfolio/static/js/787.9980ff62.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3225b16c.css",
-    "static/js/main.cc32c896.js"
+    "static/css/main.1ec89f67.css",
+    "static/js/main.4353d7bb.js"
   ]
 }
