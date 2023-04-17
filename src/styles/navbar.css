@@ -32,6 +32,10 @@
 
 .brand-logo{
     height:40px;
+    background-image: url(../img/brandLogo.png);
+    background-repeat:no-repeat;
+    background-size: contain;
+    background-position: left center;
 }
 
 
@@ -75,12 +79,13 @@
 
     .navbar-parent-container{
         height: 10vh;
-        width: 90vw;
+        width: 98vw;
         font-family: Roboto-Light;
     }
 
     .navbar{
-        padding-top: 5vh;
+        padding-top: 3vh;        
+        padding-bottom: 2vh;
         font-size: 0.5em;
     }
 
@@ -88,6 +93,12 @@
         align-items: center;
         text-align: center;
         font-size: 2em;
+    }
+
+    .brand-logo{
+        height:40px;
+        background-image: url(../img/brandLogoMobile.png);
+        background-position: center center;
     }
   }
 

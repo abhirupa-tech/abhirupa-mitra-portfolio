@@ -61,7 +61,7 @@
 
 /**Small screen laptops/ Wide tablet devices **/
 @media screen and (max-width: 450px) {
-  .App {           
-    
+  .scroll-down-arrow{
+    bottom: 40px;
   }
 }

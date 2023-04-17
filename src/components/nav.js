@@ -12,7 +12,7 @@ function NavbarComponent()  {
         <div className='navbar-parent-container'>
             <Row className="navbar">
                 <Col className='brandName' sm={3} xs={12}>
-                    <img src={BrandLogo} className="brand-logo"/>
+                    <div className="brand-logo"/>
                 </Col>
                 <Col sm={3}></Col>
                 <Col className='nav-link' sm={3}>
