@@ -60,38 +60,98 @@ $(window).on('mousewheel', function(event) {
     scrollTimeout = setTimeout(function() {
         console.log('Scroll ended');
         setIsScrolling(false)
-    }, 500);
+    }, 800);
 
     if (event.originalEvent.wheelDelta >= 0) {
-        console.log('Scroll direction up');
-        if(currentComponentIndex > 0) {        
-            console.log("Current Component Index: " + currentComponentIndex)      
-            setIsScrollingDown(false);
-            setCurrentComponentIndex (currentComponentIndex - 1);  
-            console.log("Current updated component index: " + currentComponentIndex)
-        }
+      simulateScrollUp();
     }
     else {
-        console.log('Scroll  direction down');
-        if(currentComponentIndex < totalComponents - 1) {
-            console.log("Current Component Index: " + currentComponentIndex)                
-            setIsScrollingDown(true);
-            setCurrentComponentIndex (currentComponentIndex + 1) 
-            console.log("Current updated component index: " + currentComponentIndex)
-        }
+      simulateScrollDown();
   }
 });
 
+const simulateScrollDown = () => {
+  console.log('Scroll  direction down');
+  if(currentComponentIndex < totalComponents - 1) {
+      console.log("Current Component Index: " + currentComponentIndex)                
+      setIsScrollingDown(true);
+      setCurrentComponentIndex (currentComponentIndex + 1) 
+      console.log("Current updated component index: " + currentComponentIndex)
+  }  
+}
 
+const simulateScrollUp = () => {
+  console.log('Scroll direction up');
+  if(currentComponentIndex > 0) {        
+      console.log("Current Component Index: " + currentComponentIndex)      
+      setIsScrollingDown(false);
+      setCurrentComponentIndex (currentComponentIndex - 1);  
+      console.log("Current updated component index: " + currentComponentIndex)
+  }  
+}
 
-  return (
+document.addEventListener("touchstart", startTouch, false);
+document.addEventListener("touchmove", moveTouch, false);
+
+// Swipe Up / Down / Left / Right
+var initialX = null;
+var initialY = null;
+
+function startTouch(e) {
+  initialX = e.touches[0].clientX;
+  initialY = e.touches[0].clientY;
+};
+
+function moveTouch(e) {
+  if (initialX === null) {
+    return;
+  }
+
+  if (initialY === null) {
+    return;
+  }
+
+  var currentX = e.touches[0].clientX;
+  var currentY = e.touches[0].clientY;
+
+  var diffX = initialX - currentX;
+  var diffY = initialY - currentY;
+
+  if (Math.abs(diffX) > Math.abs(diffY)) {
+    if (diffX > 0) {
+      // swiped left
+      console.log("swiped left");
+    } else {
+      // swiped right
+      console.log("swiped right");
+    }  
+  } else {
+    // sliding vertically
+    if (diffY > 0) {
+      // swiped up
+      simulateScrollDown();
+      console.log("swiped up");
+    } else {
+      // swiped down
+      simulateScrollUp();
+      console.log("swiped down");
+    }  
+  }
+
+  initialX = null;
+  initialY = null;
+
+  e.preventDefault();
+};
+
+return (
     <div className="App">
       <NavbarComponent/>
       <IntroPage show = {showPage1} isScrollDown = {isScrollingDown}/>
       <HomePage show = {showPage2} isScrollDown = {isScrollingDown}/>
       <ContactMe show = {showPage3} isScrollDown = {isScrollingDown}/>
 
-      <Container fluid className='scroll-down-arrow'>
+      <div onClick={() => simulateScrollDown()} className='scroll-down-arrow'>
         <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g clip-path="url(#clip0_231_12)">
         <path fill-rule="evenodd" clip-rule="evenodd" d="M3.82646 13.8134C3.60346 16.274 3.6 19.4476 3.6 24C3.6 28.5523 3.60346 31.7261 3.82646 34.1866C4.04498 36.5976 4.45138 37.9685 5.04694 39C5.99482 40.6418 7.35818 42.0053 9 42.953C10.0315 43.5487 11.4023 43.955 13.8134 44.1734C16.274 44.3966 19.4476 44.4 24 44.4C28.5523 44.4 31.7261 44.3966 34.1866 44.1734C36.5976 43.955 37.9685 43.5487 39 42.953C40.6418 42.0053 42.0053 40.6418 42.953 39C43.5487 37.9685 43.955 36.5976 44.1734 34.1866C44.3966 31.7261 44.4 28.5523 44.4 24C44.4 19.4476 44.3966 16.274 44.1734 13.8134C43.955 11.4023 43.5487 10.0315 42.953 9C42.0053 7.35818 40.6418 5.99482 39 5.04694C37.9685 4.45138 36.5976 4.04498 34.1866 3.82646C31.7261 3.60346 28.5523 3.6 24 3.6C19.4476 3.6 16.274 3.60346 13.8134 3.82646C11.4023 4.04498 10.0315 4.45138 9 5.04694C7.35818 5.99482 5.99482 7.35818 5.04694 9C4.45138 10.0315 4.04498 11.4023 3.82646 13.8134ZM40.8 1.92923C37.4585 0 32.9724 0 24 0C15.0277 0 10.5415 0 7.2 1.92923C5.01091 3.1931 3.1931 5.01091 1.92924 7.2C0 10.5415 0 15.0277 0 24C0 32.9724 0 37.4585 1.92924 40.8C3.1931 42.989 5.01091 44.8068 7.2 46.0709C10.5415 48 15.0277 48 24 48C32.9724 48 37.4585 48 40.8 46.0709C42.989 44.8068 44.8068 42.989 46.0709 40.8C48 37.4585 48 32.9724 48 24C48 15.0277 48 10.5415 46.0709 7.2C44.8068 5.01091 42.989 3.1931 40.8 1.92923Z" fill="#8E8E8E"/>
@@ -103,7 +163,7 @@ $(window).on('mousewheel', function(event) {
         </clipPath>
         </defs>
         </svg>
-      </Container>
+      </div>
 
       <img src={Saly} className="img-end"/>
     </div>

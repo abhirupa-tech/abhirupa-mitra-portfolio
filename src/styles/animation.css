@@ -45,5 +45,18 @@
     }
 }
 
+@keyframes  ScrollDownArrow{
+    0% {
+        opacity: 0%;
+    }
+    80% {
+        bottom: 80px;
+        opacity: 100%;
+    }
+    100%{
+        opacity: 0%;
+    }
+}
+
 
 
