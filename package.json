@@ -22,7 +22,7 @@
     "react-scripts": "^5.0.1"
   },
   "scripts": {
-    "start": "<strong>HTTPS=true</strong> react-scripts start",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "predeploy": "npm run build",
