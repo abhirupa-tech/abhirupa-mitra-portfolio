@@ -14,6 +14,7 @@ function App() {
 
 const [currentComponentIndex, setCurrentComponentIndex] =  useState(0);
 const [isScrolling, setIsScrolling] =  useState(false);
+const [isPageLoading, setIsPageLoading] = useState(true);
 const [showPage1, setShowPage1] = useState(true);
 const [showPage2, setShowPage2] = useState(false);
 const [showPage3, setShowPage3] = useState(false);
@@ -23,6 +24,15 @@ const [isScrollingDown, setIsScrollingDown] = useState(true);
 console.log("Current Component Index Value: " + currentComponentIndex);
 const totalComponents = 3;
 
+const handleLoading = () => {
+  console.log("Loading COmplete")
+  setIsPageLoading(false);
+}
+
+useEffect(()=>{
+  window.addEventListener("load",handleLoading);
+  return () => window.removeEventListener("load",handleLoading);
+},[])
 
 useEffect(() => {
     switch (currentComponentIndex){
