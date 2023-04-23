@@ -1,7 +1,7 @@
 {
   "name": "the-travelling-programmer",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "homepage": "http://abhirupa-tech.github.io/",
   "dependencies": {
     "@smakss/react-scroll-direction": "^1.0.4",
